@@ -28,7 +28,3 @@ Future Implementations
 - Review parking spaces
 
 
-
-Project doc: https://docs.google.com/spreadsheets/d/1A2JqFxCHdygT_PnYNztQmMI-_O3uoOfdiQrATbli3gY/edit?usp=sharing
-
-
