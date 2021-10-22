@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_button_white">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="60dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shape_background_cute_blue_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Booking Information"
+        android:textAlignment="center"
+        android:textColor="@color/pacific_blue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+    <EditText
+        android:id="@+id/dialog_bottomsheet_start_time"
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_input_ash_3"
+        android:drawableStart="@drawable/icon_time"
+        android:drawablePadding="20dp"
+        android:enabled="false"
+        android:hint="Start Time"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/colorBlackShade"
+        android:textColorHint="@color/colorAsh"
+        android:textCursorDrawable="@drawable/colored_cursor"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dialog_booking_time_start_time_fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/pacific_blue"
+        android:src="@drawable/ic_extra_time"
+        app:backgroundTint="@color/pacific_blue"
+        app:borderWidth="0dp"
+        app:fabCustomSize="40dp"
+        app:layout_constraintStart_toEndOf="@+id/dialog_bottomsheet_start_time"
+        app:layout_constraintTop_toTopOf="@+id/dialog_bottomsheet_start_time"
+        app:tint="@android:color/white" />
+
+
+    <EditText
+        android:id="@+id/dialog_bottomsheet_end_time"
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_input_ash_3"
+        android:drawableStart="@drawable/icon_time"
+        android:drawablePadding="20dp"
+        android:enabled="false"
+        android:hint="End Time"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/colorBlackShade"
+        android:textColorHint="@color/colorAsh"
+        android:textCursorDrawable="@drawable/colored_cursor"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_bottomsheet_start_time"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dialog_booking_time_end_time_fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/pacific_blue"
+        android:src="@drawable/ic_extra_time"
+        app:backgroundTint="@color/pacific_blue"
+        app:borderWidth="0dp"
+        app:fabCustomSize="40dp"
+        app:layout_constraintStart_toEndOf="@+id/dialog_bottomsheet_end_time"
+        app:layout_constraintTop_toTopOf="@+id/dialog_bottomsheet_end_time"
+        app:tint="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/dialog_bottomsheet_book_btn"
+        style="@style/EditTextShadowStyle"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_background_cyan_blue_square"
+        android:text="BOOK NOW"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_bottomsheet_end_time" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

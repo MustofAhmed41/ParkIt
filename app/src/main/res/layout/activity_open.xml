@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".OpenActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/car_logo"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome"
+            android:textColor="#0d6e6a"
+            android:textSize="45dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO PARK IT"
+            android:textColor="#0d6e6a"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:text="USER"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:id="@+id/userid"/>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="OWNER"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:id="@+id/ownerid"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

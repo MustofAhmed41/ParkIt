@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ReportBugActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="245dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/icon_navigation_bugpic" />
+
+    <TextView
+        android:id="@+id/bugtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Bugs Are Annoying"
+        android:textColor="#007C91"
+        android:textIsSelectable="true"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/bugtext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="108dp"
+        android:gravity="center_horizontal"
+        android:text="Bugs in an app is no better than the bugs at home.Help us to find them."
+        android:textColor="#007C91"
+        android:textIsSelectable="true"
+        android:textSize="16dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Bug Description"
+        android:paddingLeft="30dp"
+        android:textColor="#0d6e6a"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#FF0000"
+        app:layout_constraintTop_toBottomOf="@+id/bugtext1"
+        app:startIconDrawable="@drawable/bug_icon_edit_text"
+        tools:layout_editor_absoluteX="-42dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/icon_navigation_button"
+        android:text="Send Report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

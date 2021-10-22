@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="User">
+        <menu>
+            <item android:title="@string/navigation_about_us"
+                android:icon="@drawable/icon_navigation_about1"
+                android:id="@+id/Aboutus"
+
+                />
+
+
+            <item android:title="@string/navigation_send_a_bug"
+                android:icon="@drawable/icon_navigation_bug_report"
+                android:id="@+id/Sendabug"
+                />
+
+            <item android:title="settings"
+                android:icon="@drawable/icon_navigation_setting1"
+                android:id="@+id/settings"
+                />
+            <item android:title="LogOut"
+                android:icon="@drawable/icon_navigation_exit_to_app"
+                android:id="@+id/LogOut"
+                />
+        </menu>
+    </item>
+
+</menu>

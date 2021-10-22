@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Register"
+                android:textColor="#0d6e6a"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:letterSpacing="0.03"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                app:startIconDrawable="@drawable/user"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Name"
+                app:endIconMode="clear_text"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:id="@+id/name"
+                    android:maxLength="20"
+                    android:inputType="textAutoComplete">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/email"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Email"
+                app:endIconMode="clear_text"
+                android:id="@+id/textInputLayoutusereml"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/phone"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Phone"
+                app:endIconMode="clear_text"
+                android:id="@+id/textInputLayoutuserphone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:id="@+id/phone"
+                    android:maxLength="11"
+                    android:inputType="number">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/car"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Car(type)"
+                android:id="@+id/carType"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/usercartype"
+                    android:enabled="false"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/car"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Car(model)"
+                app:endIconMode="clear_text"
+                android:id="@+id/textInputLayoutusercar"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:id="@+id/model"
+                    android:maxLength="20"
+                    android:inputType="textAutoComplete">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/car"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Car(color)"
+                app:endIconMode="clear_text"
+                android:id="@+id/textInputLayoutusercarcol"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:id="@+id/color"
+                    android:maxLength="20"
+                    android:inputType="textAutoComplete">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/car"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Car(number)"
+                app:endIconMode="clear_text"
+                android:id="@+id/textInputLayoutusercarid"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:id="@+id/number"
+                    android:maxLength="20"
+                    android:inputType="textAutoComplete">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/pass"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Password"
+                app:endIconMode="password_toggle"
+                android:id="@+id/textInputLayoutuserpas"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+                    android:maxLength="20">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                app:startIconDrawable="@drawable/secure"
+                app:helperTextTextColor="#FF0000"
+                android:paddingLeft="30dp"
+                app:helperText="Required*"
+                android:hint="Confirm Password"
+                app:endIconMode="password_toggle"
+                android:id="@+id/textInputLayoutuserconpas"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="50dp"
+                    android:layout_width="350dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/confirmPass"
+                    android:maxLength="20">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_height="50dp"
+                android:layout_width="350dp"
+                android:text="Register"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/btn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Already have an account? Sign In"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/gotouserlogin"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

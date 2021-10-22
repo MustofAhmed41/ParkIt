@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549776822556",
+    "project_id": "isdmap",
+    "storage_bucket": "isdmap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549776822556:android:cef484da8b82746f2bead9",
+        "android_client_info": {
+          "package_name": "com.example.isdmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549776822556-7ef452ov9eug4l4ksdmh28m37r2ir493.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcexMLM7tm_kirB0v8XVoXUDtFYvqZxE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549776822556-7ef452ov9eug4l4ksdmh28m37r2ir493.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
