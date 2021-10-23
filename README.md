@@ -4,7 +4,7 @@ Park It
 Description
 ------------
 
-A utility application that allow students to keep track of their daily activities, set reminders for their exams or assignments, keep track of the important news and extracurricular activities of their respective universities, such as seminars, club events, etc.
+An android application which helps users find nearby parking space based on their current location. This app will also book a slot in the parking space if needed. Bills will also be generated through this app. Parking space owners will be able to monitor their parking slots. All the booking details can be viewed by both users and parking space owners.
 
 
 - Project Goals: 
