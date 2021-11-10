@@ -27,4 +27,23 @@ Future Implementations
 - Adding security checks during owner registration
 - Review parking spaces
 
+ScreenShots
+---------------
+
+<img src="images/Capture1.PNG" width="630" height="520" >
+
+<img src="images/Capture3.PNG" width="630" height="520" >
+
+<img src="images/Capture5.PNG" width="630" height="520" >
+<img src="images/Capture6.PNG" width="630" height="520" >
+<img src="images/Capture7.PNG" width="630" height="520" >
+<img src="images/Capture8.PNG" width="630" height="520" >
+<img src="images/Capture9.PNG" width="630" height="520" >
+<img src="images/Capture10.PNG" width="630" height="520" >
+<img src="images/Capture11.PNG" width="630" height="520" >
+<img src="images/Capture12.PNG" width="630" height="520" >
+<img src="images/Capture13.PNG" width="630" height="520" >
+
+
+
 
